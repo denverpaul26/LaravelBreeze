@@ -1,0 +1,236 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --text-light: #ecf0f1;
+    --bg-dark: #34495e;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #34495e;
+}
+
+.navbar-custom {
+    background-color: var(--primary-color); /* or --bg-dark or any custom color */
+}
+
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-image {
+    flex: 1 1 40%;
+    text-align: center;
+}
+
+.profile-img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hero-text {
+    flex: 1 1 50%;
+}
+
+.hero-text h1,
+.hero-text h3,
+.hero-text p {
+    margin-bottom: 20px;
+}
+
+.section {
+    padding: 80px 0;
+    background-color: var(--bg-dark);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+
+#about {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+}
+
+#about .section-title {
+    color: var(--text-light);
+}
+
+#about .spec-item {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--text-light);
+    border-left: 5px solid var(--secondary-color);
+    box-shadow: none;
+}
+
+
+
+.spec-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.spec-item {
+    background-color: white;
+    color: var(--primary-color);
+    padding: 15px 20px;
+    margin-bottom: 12px;
+    border-left: 5px solid var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.spec-item:hover {
+    transform: translateY(-3px);
+    background-color: #f0f8ff;
+}
+
+
+.spec-item {
+    animation: fadeInUp 0.4s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section-title{
+    color: var(--text-light);
+}
+
+.testimonial-section {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    padding: 80px 20px;
+    min-height: 80vh;
+}
+
+.testimonial-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background-color: var(--primary-color);
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    padding: 30px 25px;
+    max-width: 350px;
+    flex: 1 1 300px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.testimonial-photo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--secondary-color);
+}
+
+.testimonial-content {
+    flex: 1;
+}
+
+.testimonial-message {
+    font-style: italic;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.testimonial-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.testimonial-position {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.alert-success {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+
+.skill-tag {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.project-card {
+    transition: transform 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
